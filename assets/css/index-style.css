@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(to bottom right, #D3ACCC, #F0B0BC, #EDD2C3);
+    background-repeat: no-repeat;
+    margin: 0;   
+}
