@@ -28,6 +28,37 @@ nav{
     width: 100%;
 }
 
+/* .section-size{
+    display
+} */
+
+#about{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5vh 1fr;
+    grid-template-areas: "about-title about-title "
+                        "about-content about-image"; 
+    width: 65vw;
+    height:50vh;
+    margin:30px 0px 100px 0px;
+}
+
+#about-header{
+    grid-area: about-title;
+    
+}
+
+#about-content{
+    grid-area: about-content;
+
+}
+
+#about-image{
+    grid-area: about-image;
+
+}
+
+
 #welcome{
 
     display:flex;
@@ -46,10 +77,10 @@ nav{
     /* padding-right: 70px; */
 }
 
-section#welcome h1{
+#welcome h1{
     font-size: 100px;
 }
 
-section#welcome h3{
+#welcome h3{
     font-size: 60px;
 }
