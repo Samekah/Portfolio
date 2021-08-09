@@ -10,7 +10,7 @@ body{
 }
 
 p{
-    font-size: 1.25rem;
+    font-size: max(1.25rem);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -34,10 +34,10 @@ p{
     font-size: 4rem;
 }
 
-#about-header>h1, #projects>h1{
+#about-header>h1, #skills-header>h1, #projects>h1{
     font-size: 3rem;
 }
 
 #about-tags{
     font-size: 2rem;
-} minmax(0, 1fr)
+}
