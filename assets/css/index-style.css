@@ -9,3 +9,22 @@ body{
     
 }
 
+.nav-item{
+    font-size: 2rem;
+}
+
+#welcome h1{
+    font-size: 10rem;
+}
+
+#welcome h3{
+    font-size: 4rem;
+}
+
+#about-header{
+    font-size: 2rem;
+}
+
+#about-content{
+    font-size: 1.5rem;
+}
