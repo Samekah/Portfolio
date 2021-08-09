@@ -40,4 +40,4 @@ p{
 
 #about-tags{
     font-size: 2rem;
-}
+} minmax(0, 1fr)

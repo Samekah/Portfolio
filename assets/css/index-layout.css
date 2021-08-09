@@ -95,8 +95,8 @@ section{
 
 #about-grid{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 1fr;
+    grid-template-columns:  minmax(0, 1fr)  minmax(0, 1fr);
+    grid-template-rows: 10vh  minmax(0, 1fr);
     grid-template-areas: "about-title about-title "
                         "about-content about-image"; 
     width: 65vw;
@@ -155,5 +155,9 @@ section{
 }
 
 #carousel{
-    display:flex;
+    display: flex;
+    height: 65%;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
 }
