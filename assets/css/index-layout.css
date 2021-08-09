@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0px 10px;
+    height: 10vh;
+    width:100%;
+    
+}
+
+.nav-item{
+    display:inline;
+    text-decoration: none;
+    padding: 0px 15px;
+    
+}
+
+.nav-item>a{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    width: 80vw;
+
+    background-color: blanchedalmond;
+    border:2px solid black;
+        
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#logo>a>img{
+    height: 95px;
+    width: 95px;
+}
+
+#welcome{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+}
+
+#welcome-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    height: 100%;
+        
+}
+
+#welcome-item{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    
+   
+} 
+
+#about{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+#about-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 1fr;
+    grid-template-areas: "about-title about-title "
+                        "about-content about-image"; 
+    width: 65vw;
+    height:50vh;
+    align-content: center;
+}
+
+/* .container-sizing{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+        
+} */
+
+#about-header{
+    grid-area: about-title;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+#about-content{
+    grid-area: about-content;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#about-tags{
+    padding: 35px 0px;
+   
+}
+
+#about-image{
+    grid-area: about-image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+#carousel{
+    display:flex;
+}
