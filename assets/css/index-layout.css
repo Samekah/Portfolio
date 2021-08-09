@@ -101,27 +101,38 @@ section{
                         "about-content about-image"; 
     width: 65vw;
     height:50vh;
-    margin:30px 0px 100px 0px;
     align-content: center;
 }
+
+/* .container-sizing{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+        
+} */
 
 #about-header{
     grid-area: about-title;
     display:flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 0px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 100%;
 }
 
 #about-content{
     grid-area: about-content;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    height: 100%;
+    width: 100%;
 }
 
 #about-tags{
-    text-align: center;
+    padding: 35px 0px;
+   
 }
 
 #about-image{
@@ -131,4 +142,18 @@ section{
     align-items: center;
     height: 100%;
     width: 100%;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+#carousel{
+    display:flex;
 }
