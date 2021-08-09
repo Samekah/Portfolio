@@ -47,9 +47,13 @@ section{
     height:100%;
     width: 80vw;
 
-    background-color: blanchedalmond;
-    border:2px solid black;
+    /* background-color: blanchedalmond;
+    border:2px solid black; */
         
+}
+
+.icon-item{
+    padding:30px;
 }
 
 ::-webkit-scrollbar {
@@ -95,12 +99,12 @@ section{
 
 #about-grid{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 1fr;
+    grid-template-columns:  minmax(0, 1fr)  minmax(0, 1fr);
+    grid-template-rows: 10vh  minmax(0, 1fr);
     grid-template-areas: "about-title about-title "
                         "about-content about-image"; 
     width: 65vw;
-    height:50vh;
+    height:80vh;
     align-content: center;
 }
 
@@ -144,7 +148,7 @@ section{
     width: 100%;
 }
 
-#projects{
+#projects, #skills{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,6 +158,40 @@ section{
 
 }
 
+#skills-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;   
+}
+
+#skills-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 15%;
+}
+
 #carousel{
-    display:flex;
+    display: flex;
+    height: 65%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen{
+    display: flex;
+    height: 55%;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
