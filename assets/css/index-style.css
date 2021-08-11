@@ -14,6 +14,10 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
+i{
+    padding-top:5px;
+}
+
 .navbar{
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
@@ -29,7 +33,11 @@ p{
 
 .skill-item{
     text-align: center;
-    border: 2px solid black;
+    background-image: url(../img/window-container.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    image-rendering: pixelated;
+    
 }
 
 #welcome h1{
@@ -49,7 +57,7 @@ p{
 }
 
 #screen{
-    background-image: linear-gradient(to bottom, rgba(238, 238, 238, 0.00), rgba(238, 238, 238, 0)), url(../img/screen-container.png);
+    background-image: url(../img/screen-container.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     image-rendering: pixelated;
@@ -58,4 +66,8 @@ p{
 
 #skills-image>img{
     image-rendering: pixelated;
+}
+
+.icon-container{
+    padding-top:15px;
 }
