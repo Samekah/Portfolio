@@ -59,6 +59,13 @@ footer{
     padding:30px;
 }
 
+.skill-item{
+    padding:5px;
+    margin: 0px 15px;
+    width: 12%;
+    height: 50%;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -190,7 +197,7 @@ footer{
     width: 85%;
     justify-content: center;
     align-items: center;
-    margin-top: 34px;
+    margin: 5px 0px 25px 0px;
 }
 
 #icons{
@@ -212,9 +219,11 @@ footer{
 
 #screen-item{
     display: flex;
+    flex-wrap: wrap;
     height: 64%;
     width: 83%;
     /* background-color: red; */
+    overflow: scroll;
     margin: 0px 54px 62px 0px;
     padding: 15px;
 }
