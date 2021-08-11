@@ -24,6 +24,12 @@ p{
 
 .nav-item{
     font-size: 1.75rem;
+    
+}
+
+.skill-item{
+    text-align: center;
+    border: 2px solid black;
 }
 
 #welcome h1{
@@ -48,4 +54,8 @@ p{
     background-size: 100% 100%;
     image-rendering: pixelated;
     margin-top: 34px;
+}
+
+#skills-image>img{
+    image-rendering: pixelated;
 }
