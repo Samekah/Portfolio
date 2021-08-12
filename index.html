@@ -11,6 +11,7 @@
         
         <link rel="stylesheet" href="./assets/css/index-style.css" type="text/css">
         <link rel="stylesheet" href="./assets/css/index-layout.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/arrow.css" type="text/css">
     </head>
     <body>
         <header>
@@ -33,9 +34,18 @@
                         <div id="welcome-content">
                             <h1>Howdy!</h1>
                             <h3>My name's Sammie... </h3>
-                            <div id="welcome-item">
-                                <img src="#" alt="bouncing arrow">
-                            </div>
+                            <a href="#about">
+                                <div id="welcome-item">
+                                    <div id="down-arrow">
+                                        <div class="line-1"></div>
+                                        <div class="line-2"></div>
+                                        <div class="line-3"></div>
+                                        <div class="line-4"></div>
+                                        <div class="line-5"></div>
+                                        <div class="line-6"></div>
+                                    </div>
+                                </div>
+                            </a>
                         </div> 
                     </div>                                    
                 </section>
@@ -45,13 +55,16 @@
                         <div id="about-header">
                             <h1>About me</h1>
                         </div>
-                        <div id="about-content">
+                        <div id="tagline">
                             <p id="about-tags">A Full stack Web Developer at Futureproof!</p>
-                            <br>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam minus earum itaque enim maxime delectus ea totam, ipsam excepturi sapiente! Quisquam laboriosam voluptates, beatae minus et temporibus distinctio perferendis aspernatur, provident harum, officiis nihil placeat quas sapiente tenetur pariatur veniam impedit! Pariatur enim non, officiis eaque eos ullam culpa esse accusantium sunt eum laboriosam vel quidem autem veniam similique qui iste minus minima dicta quis placeat voluptatibus iure amet repellat! Officia, tempora eum voluptatum, animi nostrum expedita deleniti, itaque alias dolorem deserunt sunt dicta quod quidem quasi sint modi eaque porro veniam et accusantium blanditiis quas! Magnam libero soluta facilis accusamus minus optio est quos repellendus incidunt unde, repudiandae eum quo ipsa deleniti ea quasi minima quisquam provident esse at qui. Earum possimus numquam doloribus, tempora quasi eveniet optio rerum sint recusandae incidunt. Qui doloribus iste rem excepturi aliquam veritatis nulla ratione animi in reprehenderit eos, suscipit aspernatur ipsam illo?</p>
+                        </div>
+                        <div id="about-content">
+                            <div>
+                                <p>Growing up I was always fascinated by how technology morphed to fit the needs of people. With video games, it always interested me how pressing a button on a controller would influence the character on the screen. This curiosity grew once I came across programming languages and how they could be used to solve problems. The fact that a problem could be solved creatively in multiple ways was also of interest to me – this idea fed into my curiosity and developed into my passion for teaching. As a highly motivated, passionate and hardworking individual, being able to teach people skills and potentially igniting a passion like mine is a key goal of mine. This fuels my eagerness to find a way to combine my passion for games and education to learn and further develop my skills to help others.</p>
+                            </div>
                         </div> 
                         <div id="about-image">
-                            <img src="#" alt="Pic of me!">
+                            <img src="./assets/img/sammie.jpeg" alt="Pic of me!">
                         </div>
                     </div> 
                 </section> 
@@ -152,9 +165,9 @@
             
             <footer>
                <div id="icons">
-                   <img id="gh" class="icon-item" src="./assets/img/GitHub-Mark-64px.png" alt="Github">
-                   <img id="li" class="icon-item" src="./assets/img/LI-In-Bug.png" alt="LinkedIn">
-                   <img id="em" class="icon-item" src="./assets/img/email-icon.png" alt="Email">
+                   <a href="https://github.com/Samekah"><img id="gh" class="icon-item" src="./assets/img/GitHub-Mark-64px.png" alt="Github"></a>
+                   <a href="https://www.linkedin.com/in/samekah-howard/"><img id="li" class="icon-item" src="./assets/img/LI-In-Bug.png" alt="LinkedIn"></a>
+                   <a href="mailto:samekahhoward@gmail.com"><img id="em" class="icon-item" src="./assets/img/email-icon.png" alt="Email"></a>
                </div>
             </footer>
         </main>    
