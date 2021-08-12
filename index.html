@@ -7,11 +7,14 @@
         <title>Samekah Howard</title>
         <link rel="shortcut icon" href="./assets/img/FLOWER_ASSET_1.png" type="image/png">
         <!-- css and js -->
-        <script src="https://kit.fontawesome.com/255dc6a99b.js" crossorigin="anonymous"></script>
-        
         <link rel="stylesheet" href="./assets/css/index-style.css" type="text/css">
         <link rel="stylesheet" href="./assets/css/index-layout.css" type="text/css">
         <link rel="stylesheet" href="./assets/css/arrow.css" type="text/css">
+        <script src="https://kit.fontawesome.com/255dc6a99b.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+        <script defer src="./assets/js/anim.js"></script>
+        
     </head>
     <body>
         <header>
@@ -32,7 +35,10 @@
                 <section>
                     <div id="welcome">
                         <div id="welcome-content">
-                            <h1>Howdy!</h1>
+                            <h1>
+                                <span class="text"></span>
+                                <span class="cursor">_</span>
+                            </h1>
                             <h3>My name's Sammie... </h3>
                             <a href="#about">
                                 <div id="welcome-item">
@@ -136,7 +142,7 @@
                                 <div class="skill-item">
                                     <div class="icon-container">
                                         <p>Python</p>
-                                        <p>icon</p>
+                                        <i class="fab fa-python fa-4x"></i>
                                     </div>
                                 </div>
 
@@ -150,7 +156,7 @@
                                 <div class="skill-item">
                                     <div class="icon-container">
                                         <p>C & C++</p>
-                                        <p>icon</p>
+                                        <img id="c-icon" src="./assets/img/C.png" alt="c icon">
                                     </div>
                                 </div>
 
