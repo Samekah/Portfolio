@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body{
 
     background-image:linear-gradient(to bottom right, #D3ACCC, #F0B0BC, #EDD2C3);
