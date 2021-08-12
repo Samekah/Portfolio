@@ -5,6 +5,7 @@
 
 main{
     width: 100vw;
+    height:100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,12 +111,14 @@ footer{
 #about-grid{
     display:grid;
     grid-template-columns:  minmax(0, 1fr)  minmax(0, 1fr);
-    grid-template-rows: 10vh  minmax(0, 1fr);
+    grid-template-rows: 10vh 10vh minmax(0, 1fr);
     grid-template-areas: "about-title about-title "
-                        "about-content about-image"; 
+                         "about-tagline about-tagline "
+                         "about-content about-image"; 
     width: 65vw;
     height:80vh;
     align-content: center;
+    justify-items: center;
 }
 
 /* .container-sizing{
@@ -136,13 +139,25 @@ footer{
     width: 100%;
 }
 
+#tagline{
+    grid-area: about-tagline;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 100%;
+    width: 100%;
+}
+
 #about-content{
     grid-area: about-content;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
-    width: 100%;
+    width: 90%;
 }
+
 
 #about-tags{
     padding: 35px 0px;
@@ -155,7 +170,11 @@ footer{
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
+}
+
+#about-image>img{
+    width: 85%;
+    margin: auto;
 }
 
 #projects, #skills{
