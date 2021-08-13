@@ -13,12 +13,12 @@ timeline.from("[QUERYSELECTOR]", {PROPERTIES}, DELAY)
 const welcomeWords = ["Howdy!", "Bonjour!", "¡Hola!", "Ciao!", "E kãro" ,"你好", "こんにちは", "ٱلسَّلَامُ عَلَيْكُمْ‎"]
 gsap.to(".cursor", {opacity: 0, duration: 0.5, yoyo: true, ease: "power2.inOut", repeat: -1});
 
-let masterTimeLine = gsap.timeline({onComplete: welcomeDisplay}).delay(1.5);
+let welcomeMasterTimeLine = gsap.timeline({onComplete: welcomeDisplay}).delay(1.5);
 welcomeWords.forEach(word =>{
 
     let tl = gsap.timeline({repeat: 1, yoyo: true, repeatDelay: 1});
     tl.to(".text", {duration: 1, text: word});
-    masterTimeLine.add(tl);
+    welcomeMasterTimeLine.add(tl);
 })
 
 gsap.from("#welcome-content>h3",{delay: 2, duration: 1, opacity: 0, ease: "sine.in"});
@@ -27,16 +27,41 @@ function welcomeDisplay(){
     gsap.to(".text", {duration: 1, text: welcomeWords[0]});
 }
 
+
+
+
+
 // animation for skill icons - to start on scrol to the section
-gsap.from(".skill-item", {
-    scrollTrigger: {
-        trigger: ".skill-item",
-        toggleActions: "resume pause resume pause",
-        start: "top center",
-    }, 
-    duration: 1.5, 
-    opacity: 0, 
-    stagger: 0.5,
-    delay: 0.5, 
-    ease: "circ"
-});
+
+
+let skillsTimeLine = gsap.timeline({defaults: {duration: 1.5}, scrollTrigger: {
+    trigger: ".skill-item",
+    toggleActions: "resume pause resume pause",
+    start: "top center",
+}}); 
+skillsTimeLine.from(".skill-item", {opacity: 0, stagger: 0.5, delay: 0.5, ease: "circ"})
+              .to(".static", 0.05, {onRepeat: staticAnim , repeat: -1},"<")
+              .to(".static", {opacity: 0, stagger: 0.5,}, "<2.5");
+
+// function skillsFadeIn(){
+
+    // gsap.from(".skill-item", {
+    //     scrollTrigger: {
+    //         trigger: ".skill-item",
+    //         toggleActions: "resume pause resume pause",
+    //         markers: true,
+    //         start: "top center",
+    //     }, 
+    //     opacity: 0, 
+    //     stagger: 0.5,
+    //     delay: 0.5, 
+    //     duration: 2,
+    //     ease: "circ"
+    // })
+
+// }
+
+
+function staticAnim(){
+    gsap.set(".static", {backgroundPosition: Math.floor(Math.random() * 100) + 1 + "% " + Math.floor(Math.random() * 10) + 1 + "%"})
+}
