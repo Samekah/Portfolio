@@ -81,8 +81,7 @@ i{
     padding-top:15px;
     overflow: hidden;
     position: relative;
-    height:132px;
-    
+    height:130px;
 }
 
 .static{
@@ -92,4 +91,5 @@ i{
     height: 127px;
     width: 115px;
     z-index: 1;
+    border-radius: 5px;
 }
