@@ -28,7 +28,7 @@ i{
     box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(10px);
     border-bottom: 3px solid rgba(255, 255, 255, 0.1);
-
+    z-index: 1;
 }
 
 .nav-item{
@@ -90,6 +90,6 @@ i{
     transform: translate(4px, -10px);
     height: 127px;
     width: 115px;
-    z-index: 1;
+    z-index: 0.9;
     border-radius: 5px;
 }
