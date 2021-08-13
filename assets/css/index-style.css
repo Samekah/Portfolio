@@ -79,4 +79,17 @@ i{
 
 .icon-container{
     padding-top:15px;
+    overflow: hidden;
+    position: relative;
+    height:130px;
+}
+
+.static{
+    position: absolute;
+    background-image: url(../img/noise_30.png);
+    transform: translate(4px, -10px);
+    height: 127px;
+    width: 115px;
+    z-index: 1;
+    border-radius: 5px;
 }
