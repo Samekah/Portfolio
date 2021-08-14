@@ -1,0 +1,201 @@
+/* media queries for welcome section */
+/* need to queries for bouncing arrow */
+/* min, this number and above */
+
+@media only screen and (min-width:1450px) and (max-width: 1810px){
+    #welcome-content>h1{
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (min-width:1052px) and (max-width: 1449px){
+    #welcome-content>h1{
+        font-size: 6rem;
+    }
+
+    #welcome-content>h3{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width:880px) and (max-width: 1051px){
+    #welcome-content>h1{
+        font-size: 5rem;
+    }
+
+    #welcome-content>h3{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width:742px) and (max-width: 879px){
+    #welcome-content>h1{
+        font-size: 4rem;
+    }
+
+    #welcome-content>h3{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width:535px) and (max-width: 741px){
+    #welcome-content>h1{
+        font-size: 3rem;
+    }
+
+    #welcome-content>h3{
+        font-size: 2rem;
+    }
+
+     /* do this with js */
+    /* #down-arrow{
+        
+        transform: rotate(90deg) scale(0.5);
+    } */
+} 
+
+@media only screen and (min-width:400px) and (max-width: 534px){
+    #welcome-content>h1{
+        font-size: 2.25rem;
+    }
+
+    #welcome-content>h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:399px){
+    #welcome-content>h1{
+        font-size: 2.25rem;
+    }
+
+    #welcome-content>h3{
+        font-size: 1.5rem;
+    }
+}
+
+/* about section media queries */
+@media only screen and (min-width: 1100px) and (max-width: 1314px){
+    #about-content>div>p{
+        font-size: 1.15rem;
+    }
+}
+
+@media only screen and (min-width: 852px) and (max-width: 1099px){
+    #about-header>h1, #skills-header>h1, #projects>h1{
+        font-size: 2.5rem;
+    }
+   
+    #about-content>div>p{
+        font-size: 1rem;
+    }
+    
+    #about-tags{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 693px) and (max-width: 851px){
+    #about-header>h1, #skills-header>h1, #projects>h1{
+        font-size: 2.5rem;
+    }
+    
+    #about-content>div>p{
+        font-size: 1rem;
+    }
+    
+    #about-tags{
+        font-size: 1.5rem;
+        text-align: center;
+    }    
+    
+    #about-grid{
+        grid-template-rows: 10vh 30vh minmax(0, 1fr);
+        grid-template-areas: "about-title about-title "
+                             "about-tagline about-image "
+                             "about-content about-content"; 
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 692px){
+    #about-header>h1, #skills-header>h1, #projects>h1{
+        font-size: 2.25rem;
+    }
+    
+    #tagline{
+        text-align: center;
+    }
+
+    #about-tags{
+        font-size: 1.3rem;
+        text-align: center;
+    }   
+
+    #about-image{
+        width: 65%;
+    }
+
+    #about-content>div>p{
+        font-size: 0.75rem;
+    }
+
+    #about-content{
+        width: 100%;
+    }
+    
+    #about-grid{
+        grid-template-rows: 10vh 10vh 30vh minmax(0, 1fr);
+        grid-template-areas: "about-title about-title "
+                             "about-tagline about-tagline "
+                             "about-image about-image "
+                             "about-content about-content"; 
+    }
+}
+
+@media only screen and (max-width: 399px){
+    #about-header>h1, #skills-header>h1, #projects>h1{
+        font-size: 2.25rem;
+    }
+    
+    #tagline{
+        text-align: center;
+    }
+
+    #about-tags{
+        font-size: 1.3rem;
+        text-align: center;
+    }   
+
+    #about-image{
+        width: 65%;
+    }
+
+    #about-content>div>p{
+        font-size: 0.75rem;
+    }
+
+    #about-content{
+        width: 100%;
+    }
+    
+    #about-grid{
+        grid-template-rows: 10vh 10vh 30vh minmax(0, 1fr);
+        grid-template-areas: "about-title about-title "
+                             "about-tagline about-tagline "
+                             "about-image about-image "
+                             "about-content about-content"; 
+    }
+}
+
+@media only screen and (max-width:570px){
+    #about-image{
+        width: 75%;
+    }
+}
+
+/* skills section media queries */
+@media only screen and (max-width:630px){
+    #screen-item{
+        justify-content: center;
+    }
+}
