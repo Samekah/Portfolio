@@ -15,7 +15,7 @@ body{
 }
 
 p{
-    font-size: max(1.25rem);
+    font-size: 1.25rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -93,3 +93,5 @@ i{
     z-index: 0.9;
     border-radius: 5px;
 }
+
+.small{}

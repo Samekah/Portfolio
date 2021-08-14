@@ -7,7 +7,7 @@ gsap.to("#down-arrow",{y: "40%", duration: 1, yoyo: true, ease: "sine.in", repea
 //Animation for welcome words
 const welcomeWords = ["Howdy!", "Bonjour!", "¡Hola!", "Ciao!", "E kãro" ,"你好", "こんにちは", "ٱلسَّلَامُ عَلَيْكُمْ‎"]
 gsap.to(".cursor", {opacity: 0, duration: 0.5, yoyo: true, ease: "power2.inOut", repeat: -1});
-
+// onComplete: welcomeDisplay
 let welcomeMasterTimeLine = gsap.timeline({onComplete: welcomeDisplay}).delay(1.5);
 welcomeWords.forEach(word =>{
 
