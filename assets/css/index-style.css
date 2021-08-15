@@ -46,7 +46,7 @@ i{
 }
 
 #welcome h1{
-    font-size: 10rem;
+    font-size: 9.75rem;
 }
 
 #welcome h3{
@@ -94,4 +94,10 @@ i{
     border-radius: 5px;
 }
 
-.small{}
+/* .test{
+    background-image: url(../img/stroke.svg);
+    background-repeat: no-repeat;
+    width: inherit;
+    height: inherit;
+    background-size: contain;
+} */
