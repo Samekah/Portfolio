@@ -77,6 +77,12 @@ i{
     image-rendering: pixelated;
 }
 
+.container-bg{
+    background-image: url(../img/stroke.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+}
+
 .icon-container{
     padding-top:15px;
     overflow: hidden;

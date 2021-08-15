@@ -31,8 +31,8 @@ skillsTimeLine.from(".skill-item", {opacity: 0, stagger: 0.5, delay: 0.5, ease: 
               .to(".static", 0.05, {onRepeat: staticAnim , repeat: -1},"<")
               .to(".static", {opacity: 0, stagger: 0.5,}, "<2.5");
 
-// helper functions
 
+// helper functions
 function staticAnim(){
     gsap.set(".static", {backgroundPosition: Math.floor(Math.random() * 100) + 1 + "% " + Math.floor(Math.random() * 10) + 1 + "%"});
 }
@@ -40,3 +40,16 @@ function staticAnim(){
 function welcomeDisplay(){
     gsap.to(".text", {duration: 1, text: welcomeWords[0]});
 }
+
+//make a funtion that targets background opacity at specific points of svg - not working
+// let backgroundTimeLine = gsap.timeline({
+//     defaults: {duration: 5}, 
+//     scrollTrigger: {
+//         trigger: ".container-bg",
+//         toggleActions: "resume pause resume pause",
+//         start: "top center"       
+//     }
+// }); 
+
+// backgroundTimeLine.from(".container-bg", {opacity:0})
+//                   .to("container-bg",{opacity: 1, ease:"power2.out"})
