@@ -24,7 +24,7 @@ let skillsTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".skill-item",
         toggleActions: "resume pause resume pause",
-        start: "top center",
+        start: "top center"       
     }
 }); 
 skillsTimeLine.from(".skill-item", {opacity: 0, stagger: 0.5, delay: 0.5, ease: "circ"})
