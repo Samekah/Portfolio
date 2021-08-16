@@ -47,13 +47,11 @@ footer{
 
 .container{
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     height:100%;
     width: 80vw;
-    background-image: url(../img/stroke.svg);
-    background-repeat: no-repeat;
-    background-size: 100% 80%;
 }
 
 .icon-item{
