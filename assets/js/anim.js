@@ -25,7 +25,6 @@ let skillsTimeLine = gsap.timeline({
         trigger: ".skill-item",
         toggleActions: "resume pause resume pause",
         start: "top center",
-        markers:true     
     }
 }); 
 skillsTimeLine.from(".skill-item", {opacity: 0, stagger: 0.5, delay: 0.5, ease: "circ"})
@@ -50,7 +49,6 @@ let backgroundTimeLine = gsap.timeline({
         trigger: ".container",        
         start: "top top",
         scrub:true,
-        markers:true     
     }
 }); 
 
