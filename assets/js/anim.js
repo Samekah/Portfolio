@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, CSSRulePlugin);
 
 //animation for bouncing arrow
 gsap.fromTo("#down-arrow", {opacity: 0}, {delay: 3, duration: 2, opacity: 1});
@@ -24,7 +24,8 @@ let skillsTimeLine = gsap.timeline({
     scrollTrigger: {
         trigger: ".skill-item",
         toggleActions: "resume pause resume pause",
-        start: "top center"       
+        start: "top center",
+        markers:true     
     }
 }); 
 skillsTimeLine.from(".skill-item", {opacity: 0, stagger: 0.5, delay: 0.5, ease: "circ"})
@@ -41,15 +42,17 @@ function welcomeDisplay(){
     gsap.to(".text", {duration: 1, text: welcomeWords[0]});
 }
 
-//make a funtion that targets background opacity at specific points of svg - not working
-// let backgroundTimeLine = gsap.timeline({
-//     defaults: {duration: 5}, 
-//     scrollTrigger: {
-//         trigger: ".container-bg",
-//         toggleActions: "resume pause resume pause",
-//         start: "top center"       
-//     }
-// }); 
+let rule = CSSRulePlugin.getRule(".container::after")
 
-// backgroundTimeLine.from(".container-bg", {opacity:0})
-//                   .to("container-bg",{opacity: 1, ease:"power2.out"})
+//make a funtion that targets background opacity at specific points of svg - not working
+let backgroundTimeLine = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".container",        
+        start: "top top",
+        scrub:true,
+        markers:true     
+    }
+}); 
+
+backgroundTimeLine.from(rule, {cssRule: {opacity:0}})
+                  .to(rule, {cssRule: {opacity: 1}})
