@@ -1,3 +1,25 @@
+/* mediaqueries for container */
+
+@media only screen and (min-width:657px) and (max-width:1810px){
+    .container::after{
+        background-size: 100% 79%;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:657px){
+    .container::after{
+        background-image: none;
+        background-size: 100% 79%;
+    }
+}
+
+@media only screen and (max-width:399px){
+    .container::after{
+        background-image: none;
+        background-size: 100% 79%;
+    }
+}
+
 /* media queries for welcome section */
 /* need to queries for bouncing arrow */
 /* min, this number and above */
