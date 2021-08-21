@@ -28,9 +28,9 @@ let skillsTimeLine = gsap.timeline({onComplete: showInfo,
 }); 
 skillsTimeLine.from(".skill-item", {opacity: 0, stagger: 0.5, delay: 0.5, ease: "circ"})
               .to(".static", 0.05, {id:"myStatic", onRepeat: staticAnim , repeat: -1,},"<")
-              .to(".static", {opacity: 0, stagger: 0.5, onComplete:test}, "<2.5");
+              .to(".static", {opacity: 0, stagger: 0.5, onComplete:stopAnim}, "<2.5");
 
-function test(){
+function stopAnim(){
     var myTween = skillsTimeLine.getById("myStatic");
     myTween.kill();
 }
