@@ -57,7 +57,7 @@ let backgroundTimeLine = gsap.timeline({
 backgroundTimeLine.from(rule, {cssRule: {opacity:0}})
                   .to(rule, {cssRule: {opacity: 1}})
 
-//function to show data
+//function to show extra info - do media queries for it
 function showInfo(){
     
     let skillImage = document.querySelector("#c-icon")
