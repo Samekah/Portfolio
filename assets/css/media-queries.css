@@ -216,6 +216,42 @@
 }
 
 /* skills section media queries */
+@media only screen and (min-width:1376px) and (max-width:1536px){
+    .description{
+        padding-left: 60px;
+    }
+}
+
+@media only screen and (min-width:1210px) and (max-width:1375px){
+    .description{
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (min-width:870px) and (max-width:1209px){
+    .description{
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:869px){
+    .description{
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:599px){
+    .description{
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width:399px){
+    .description{
+        padding-left: 20px;
+    }
+}
+
 @media only screen and (max-width:630px){
     #screen-item{
         justify-content: center;
