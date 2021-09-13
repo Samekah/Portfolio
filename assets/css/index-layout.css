@@ -22,6 +22,38 @@ footer{
     width:100vw;
 }
 
+img[alt="MongoDB logo"]{
+    width: 200px;
+}
+
+img[alt="Jest"]{
+    width: 88px;
+}
+
+img[alt="React-Testing Library"]{
+    width: 100px;
+}
+
+.description{
+    overflow-y:scroll;
+    visibility:hidden;
+    padding-left: 70px;
+    height: 60%;
+    width: 91%;
+}
+
+.description p{
+    margin-top: 10px;
+}
+
+.description img{
+    padding: 5px 10px 0px 10px;
+}
+
+.description i{
+    padding: 10px;
+}
+
 .navbar{
     display:flex;
     flex-direction: row;
@@ -234,9 +266,10 @@ footer{
 #screen-item{
     display: flex;
     flex-wrap: wrap;
-    height: 64%;
+    height: 68%;
     width: 83%;
     overflow: scroll;
-    margin: 0px 54px 62px 0px;
+    margin: 0px 46px 62px 0px;
     padding: 15px;
+    justify-content: center;
 }
