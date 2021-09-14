@@ -19,6 +19,10 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
+[id^='description-']>ul{
+    font-size: 1.25rem;
+}
+
 i{
     padding-top:5px;
     padding-bottom: 10px;
@@ -76,9 +80,9 @@ hr{
     margin-top: 34px;
 }
 
-#description-11>p{
+/* #description-11>p{
     font-size: 1rem;
-}
+} */
 
 /* #screen-item::-webkit-scrollbar{
     display:initial;
