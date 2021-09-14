@@ -19,8 +19,19 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
+[id^='description-']>ul{
+    font-size: 1.25rem;
+}
+
 i{
     padding-top:5px;
+    padding-bottom: 10px;
+}
+
+hr{
+    width: 66%;
+    margin: auto;
+    visibility: hidden;
 }
 
 .navbar{
@@ -68,6 +79,10 @@ i{
     image-rendering: pixelated;
     margin-top: 34px;
 }
+
+/* #description-11>p{
+    font-size: 1rem;
+} */
 
 /* #screen-item::-webkit-scrollbar{
     display:initial;
