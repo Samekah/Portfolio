@@ -218,7 +218,11 @@ img[alt="React-Testing Library"]{
 }
 
 #c-icon{
-    width:60%;
+    width:15%;
+}
+
+#cpp-icon{
+    width:25%;
 }
 
 #skills-image{
@@ -272,4 +276,8 @@ img[alt="React-Testing Library"]{
     margin: 0px 46px 62px 0px;
     padding: 15px;
     justify-content: center;
+}
+
+#skill-11.skill-item{
+    padding: 0px;
 }
