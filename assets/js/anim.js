@@ -60,7 +60,7 @@ backgroundTimeLine.from(rule, {cssRule: {opacity:0}})
 //function to show extra info - do media queries for it
 function showInfo(){
     
-    let skillImage = document.querySelector("#c-icon")
+    // let skillImage = document.querySelector("#c-icon")
     
     let skillButtonContainer = document.querySelector("#screen-item");
     let staticCovers = document.querySelectorAll(".static");
@@ -96,7 +96,7 @@ function showInfo(){
                 skillButtondiv[i].style.paddingTop = "25px"
                 skillButtondiv[i].style.height = "90%"
                 
-                skillImage.style.width = "8%"
+                // skillImage.style.width = "8%"
 
                 expand = false;
             }
@@ -112,7 +112,7 @@ function showInfo(){
                 skillButtondiv[i].style.paddingTop = "15px";
                 skillButtondiv[i].style.height = "130px";
                 
-                skillImage.style.width = "60%"
+                // skillImage.style.width = "60%"
 
                 expand = true;
 
