@@ -262,9 +262,9 @@ ul{
     width: 100%;
 }
 
-#icons>a>img{
-    width: 142px;
-    height: 128px;
+#icons>a>img {
+    width: 152px;
+    height: 133px;
 }
 
 #icons>a>img#gh{
@@ -282,7 +282,3 @@ ul{
     padding: 15px;
     justify-content: center;
 }
-/* 
-#spritesheet{
-    transform: scale(0.8);
-} */

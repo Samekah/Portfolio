@@ -69,11 +69,6 @@
         font-size: 2rem;
     }
 
-     /* do this with js */
-    /* #down-arrow{
-        
-        transform: rotate(90deg) scale(0.5);
-    } */
 } 
 
 @media only screen and (min-width:400px) and (max-width: 534px){
