@@ -60,12 +60,13 @@ backgroundTimeLine.from(rule, {cssRule: {opacity:0}})
 //function to show extra info - do media queries for it
 function showInfo(){
     
-    let skillImage = document.querySelector("#c-icon")
 
+    // let skillImage = document.querySelector("#c-icon")
     let skillButtonContainer = document.querySelector("#screen-item");
     let staticCovers = document.querySelectorAll(".static");
     let skillButtons = document.querySelectorAll("[id^='skill-']");
     let skillButtondiv = document.querySelectorAll(".icon-container");
+    let skillLine = document.querySelectorAll("hr")
     let skillInfo = document.querySelectorAll(".description");
 
     for(let i = 0; i < staticCovers.length; i++){
@@ -85,28 +86,37 @@ function showInfo(){
             //expand and close box
             if(expand){
                 skillButtonState = "1"
-            
+
+                
+                skillLine[i].style.visibility = "visible"
+
                 skillButtons[i].style.width = "78%";
                 skillButtons[i].style.height = "100%";
-                skillButtonContainer.style.justifyContent = "center";
+                // skillButtonContainer.style.justifyContent = "center";
                 
                 skillButtondiv[i].style.paddingTop = "25px"
                 skillButtondiv[i].style.height = "90%"
                 
-                skillImage.style.width = "8%"
+
+                // skillImage.style.width = "8%"
 
                 expand = false;
             }
             else{
                 skillButtonState = "0"
+
+                skillLine[i].style.visibility = "hidden"
+
                 skillButtons[i].style.width = "133px";
                 skillButtons[i].style.height = "145px";
-                skillButtonContainer.style.justifyContent = "unset";
+                // skillButtonContainer.style.justifyContent = "unset";
+
 
                 skillButtondiv[i].style.paddingTop = "15px";
                 skillButtondiv[i].style.height = "130px";
-                
-                skillImage.style.width = "60%"
+
+                // skillImage.style.width = "60%"
+
 
                 expand = true;
 
